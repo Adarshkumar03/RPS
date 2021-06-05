@@ -52,7 +52,7 @@
   
   .result {
     font-size: 40px;
-    color: #E63946;
+    color: #ffcb69;
   }
   
   .result > p {
@@ -106,7 +106,22 @@
     font-family : "Asap";
   }
   
-  .grey-glow {
-    border: 4px solid #464647;
-    box-shadow: 0 0 10px #25292b;
+  .again{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    padding:15px;
+    border-radius: 15px;
+    font-family: "Asap";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #da4167;
+    color:#F1FAEE;
+    border:2px solid #F1FAEE;
+  }
+
+  .again:hover{
+    background-color: #f78764;
+    color: #F1FAEE;
   }

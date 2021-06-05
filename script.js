@@ -1,3 +1,4 @@
+
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 
@@ -9,6 +10,7 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
+const button = document.getElementById("play");
 
 const rps = ["Rock", "Paper", "Scissors"];
 
@@ -71,12 +73,14 @@ function playRound(playerSelection, computerSelection) {
     rock_div.removeEventListener("click", game);
      paper_div.removeEventListener("click", game);
      scissors_div.removeEventListener("click", game);
+     button.style.visibility = "visible";
    }else if(cScore>pScore && cScore===5){
      header.textContent = ":( Computer Wins :(";
      header.classList.add("red");
      rock_div.removeEventListener("click", game);
      paper_div.removeEventListener("click", game);
      scissors_div.removeEventListener("click", game);
+     button.style.visibility = "visible";
  }
     }
     
@@ -93,7 +97,11 @@ function playRound(playerSelection, computerSelection) {
     //     result_div.textContent = result;
     //     gameStatus(playerScore, computerScore);        
     // });
-    
+    button.addEventListener("click", refreshPage);   
     paper_div.addEventListener("click", game);
     
     scissors_div.addEventListener("click", game);  
+    function refreshPage() {
+        window.location.reload();
+    }
+    

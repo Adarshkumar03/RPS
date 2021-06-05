@@ -119,6 +119,7 @@
     background-color: #e63946;
     color:#F1FAEE;
     border:2px solid #F1FAEE;
+    transition: all 0.3s;
   }
 
   .again:hover{

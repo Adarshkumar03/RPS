@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #1D3557;
+  }
+  header {
+    background: #E63946;
+    padding: 20px;
+  }
+  
+  header > h1 {
+    color: #F1FAEE;
+    text-align: center;
+    font-family: "Asap", sans-serif;
+  }
+  
+  .score-board {
+    margin: 20px auto;
+    border: 3px solid #F1FAEE;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: #F1FAEE;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: "Asap", sans-serif;
+    position: relative;
+  }
+  
+  .badge {
+    background: #E63946;
+    color: #F1FAEE;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: "Asap", sans-serif;
+  }
+  
+  #user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+  }
+  
+  #computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+  }
+  
+  .result {
+    font-size: 40px;
+    color: #E63946;
+  }
+  
+  .result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Asap", sans-serif;
+  }
+  
+  .choices {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .choice {
+    font-family: "Asap", sans-serif;   
+    color:#F1FAEE;  
+    border: 4px solid white;
+    margin: 0 20px;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background: #457B9D;
+  }
+  
+  #action-message {
+    text-align: center;
+    color: #F1FAEE;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Asap", sans-serif;
+  }
+  
+  .green{
+    font-size: 40px;  
+    font-weight: bold;
+    background-color : #27a300;
+    color :#F1FAEE;
+    text-align : center;
+    font-family : "Asap";
+  }
+  .red {
+    font-size: 40px;
+    font-weight: bold;  
+    background-color : #d90429;
+    color :#F1FAEE;
+    text-align : center;
+    font-family : "Asap";
+  }
+  
+  .grey-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+  }

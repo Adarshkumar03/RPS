@@ -66,10 +66,9 @@
     margin-top: 50px;
   }
   
-  .choice {
-    font-family: "Asap", sans-serif;   
-    color:#F1FAEE;  
+  .choice {     
     border: 4px solid white;
+    border-radius: 50%;
     margin: 0 20px;
     padding: 20px;
     display: inline-block;

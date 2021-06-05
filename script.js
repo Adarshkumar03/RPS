@@ -69,6 +69,8 @@ function playRound(playerSelection, computerSelection) {
     header.textContent = "Player Wins!!!!";
     header.classList.add("green");
     rock_div.removeEventListener("click", game);
+     paper_div.removeEventListener("click", game);
+     scissors_div.removeEventListener("click", game);
    }else if(cScore>pScore && cScore===5){
      header.textContent = ":( Computer Wins :(";
      header.classList.add("red");
@@ -78,10 +80,9 @@ function playRound(playerSelection, computerSelection) {
  }
     }
     
-    function game(e) {
-        console.log(e.target.id);
+    function game() {
         computerSelec = computerPlay();
-        let result = playRound(e.target.id,computerSelec);
+        let result = playRound(this.id,computerSelec);
         result_div.textContent = result;
     }
     
